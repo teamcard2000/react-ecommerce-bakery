@@ -1,0 +1,46 @@
+.register-link, .login-link {
+  display: inline-block;
+  position: relative;
+  color: #333333;
+  text-decoration: none;
+}
+
+.register-link::after, .login-link::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 4px;
+  bottom: -4px;
+  left: 0;
+  background-color: #4ecdc4;
+  visibility: visible;
+  transform: scaleX(1);
+  transition: all 0.2s ease-in-out;
+}
+
+.register-link:hover::after,
+.register-link:focus::after,
+.login-link:hover::after,
+.login-link:focus::after {
+  transform: scaleX(1.2);
+}
+
+#firstname {
+  border: "2px solid #B0B0B0";
+}
+
+#lastname {
+  border: "2px solid #B0B0B0";
+}
+
+#username {
+  border: "2px solid #B0B0B0";
+}
+
+#email {
+  border: "2px solid #B0B0B0";
+}
+
+#password {
+  border: "2px solid #B0B0B0";
+}

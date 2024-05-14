@@ -2,37 +2,102 @@
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.primary-button {
+    background-color: #4ECDC4;
+    border-color: #4ECDC4;
+    transition: background-color 0.3s ease; /* Smooth transition for color change */
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.primary-button:hover, .primary-button:active, .primary-button:focus {
+  background-color: #1b7e77 !important;
+  border-color: #1b7e77 !important;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+.icon-link {
+  color: #4ECDC4;
+  margin: 0 10px;
+  font-size: 24px;
+  transition: color 0.3s ease;
+  position: relative;
+  display: inline-block;
+}
+
+.icon-link:hover {
+  color: #1b7e77;
+}
+
+.primary-button2 {
+  background-color: #4ECDC4;
+  border-color: #4ECDC4;
+  padding: 10px 20px;
+  font-weight: bold;
+  font-size: 1rem; 
+}
+
+.primary-button2:hover, .primary-button2:active, .primary-button2:focus {
+  background-color: #1b7e77 !important;
+  border-color: #1b7e77 !important;
+}
+
+.secondary-button {
+  background-color: white;
+  border-color: white;
+  color: #4ECDC4;
+  padding: 10px 20px;
+  font-weight: bold;
+  font-size: 1rem;
+}
+
+.secondary-button:hover {
+  background-color: #4ECDC4;
+  border-color: #4ECDC4;
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.secondary-button:active, .secondary-button:focus {
+  background-color: #1b7e77 !important;
+  border-color: #1b7e77 !important;
+  color: white;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.secondary-button2 {
+  background-color: white;
+  border-color: white;
+  color: #333333;
+  padding: 10px 20px;
+  font-weight: bold;
+  font-size: 1rem;
+}
+
+.secondary-button2:hover {
+  background-color: #333333;
+  border-color: #333333;
+  color: white;
+}
+
+.secondary-button2:active, .secondary-button2:focus {
+  background-color: #000000 !important;
+  border-color: #000000 !important;
+  color: white;
+}
+
+.bg-image {
+  margin: 0;
+  padding: 0;
+}
+
+.cart-badge {
+  position: absolute;
+  top: 0px;
+  right: -10px;
+  background-color: red;
+  color: white;
+  border-radius: 50%;
+  padding: 2px 8px;
+  font-size: 0.75rem;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 20px;
 }

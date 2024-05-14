@@ -1,0 +1,146 @@
+
+
+.about-section-2 .baking-img {
+    width: 100%;
+    max-width: 600px;
+}
+
+.about-section-1 .sailor-img {
+    width: 100%;
+    max-width: 600px;
+}
+
+.about-section-3 .mission-img {
+    width: 100%;
+    max-width: 600px;
+}
+
+.icon-background {
+    background-color: #4ECD98;
+    border-radius: 100%;
+    padding: 20px;
+    width: 144px;
+    height: 144px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.icon-foreground {
+    width: 72px;
+    height: 72px;
+}
+
+.purpose-title {
+    font-weight: 700;
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.purpose-description {
+    font-size: 16px;
+    margin: 0;
+    line-height: 1.5;
+}
+
+.purpose-text {
+    margin-left: 40px;
+}
+
+@media (max-width: 1400px) {
+    .icon-background {
+        width: 132px;
+        height: 132px;
+    }
+
+    .icon-foreground {
+        width: 48px;
+        height: 48px;
+    }
+
+    .purpose-title {
+        font-size: 18px;
+    }
+}
+
+@media (max-width: 1024px) {
+    .icon-background {
+        width: 120px;
+        height: 120px;
+    }
+
+    .icon-foreground {
+        width: 48px;
+        height: 48px;
+    }
+
+    .purpose-title {
+        font-size: 16px;
+    }
+
+    .purpose-description {
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 768px) {
+
+    .about-section-2 h1 {
+        text-align: center;
+        margin-bottom: 20px;
+    }
+
+    .about-section-2 .baking-img {
+        max-width: 100%;
+    }
+
+    .about-section-1 .sailor-img {
+        max-width: 100%;
+    }
+
+    .icon-background {
+        width: 100px;
+        height: 100px;
+    }
+
+    .icon-foreground {
+        width: 36px;
+        height: 36px;
+    }
+
+    .purpose-title {
+        font-size: 14px;
+    }
+
+    .purpose-description {
+        font-size: 12px;
+    }
+
+    .story-text, h5 {
+        font-size: 16px;
+        margin-bottom: 3rem;
+    }
+
+    .mission-text, h5 {
+        font-size: 16px;
+        margin-bottom: 3rem;
+    }
+}
+
+@media (max-width: 576px) {
+    .icon-background {
+        width: 90px;
+        height: 90px;
+    }
+
+    .icon-foreground {
+        width: 36px;
+        height: 36px;
+    }
+
+    .purpose-text, p {
+        text-align: center;
+        margin-left: 0;
+    }
+}
+

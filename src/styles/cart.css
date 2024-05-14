@@ -1,0 +1,205 @@
+.shopping-cart-container {
+  display: flex;
+  flex-direction: column; /* Stack elements vertically on smaller screens */
+  justify-content: space-between;
+  padding: 10px;
+  background: #d7bb9c; /* Light background */
+}
+
+.cart-items,
+.order-summary {
+  width: 100%; /* Full width on smaller screens */
+  background: #fad9d5; /* Subtle background */
+  padding: 15px;
+  border-radius: 12px;
+  margin-bottom: 10px; /* Space between cart items and order summary on mobile */
+  box-shadow: 0 4px 8px rgba(248, 131, 121, 0.51);
+  border: 1px solid #f88379;
+}
+
+.cart-header,
+.cart-row {
+  display: grid;
+  grid-template-columns: repeat(
+    4,
+    1fr
+  ); /* Simplified grid on smaller screens */
+  gap: 5px;
+  align-items: center;
+  font-size: 12px;
+}
+
+.cart-header span,
+.cart-row span,
+.order-summary div {
+  padding: 8px 0;
+}
+
+.coupon {
+  display: flex;
+  gap: 10px;
+  margin-top: 20px;
+}
+
+.quantityButton {
+  background-color: #f88379;
+  color: white;
+  border: none;
+  border-radius: 100%;
+  justify-content: center;
+  align-items: center;
+  padding: 5px 10px;
+  margin: 0 5px;
+  font-size: 16px; /* Smaller font size for mobile */
+}
+
+.quantityButton:hover,
+.quantityButton:focus,
+.quantityButton:active {
+  background-color: #c2574d !important;
+}
+
+.cart-header span {
+  border-bottom: 6px solid #4ecdc4; /* Adjust the color and thickness as needed */
+}
+
+.line-break {
+  border: 2px solid #f88379;
+  opacity: 1;
+}
+
+.icon {
+  width: 16px; /* Adjust size as needed */
+  height: 24px; /* Adjust size as needed */
+  color: #ffffff; /* Adjust color as needed */
+}
+
+.icon-thick {
+  stroke-width: 2; /* Makes the icon lines thicker */
+}
+
+.summary-row,
+.summary-total {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px; /* Space between rows */
+  font-size: 16px; /* Smaller font size for items on mobile */
+}
+
+.summary-total {
+  font-size: 20px; /* Larger font size for total */
+  font-weight: bold; /* Bold font for total */
+}
+
+.coupon {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px; /* Space between input and button */
+  margin-bottom: 20px; /* Space before the next button */
+}
+
+input[type="text"] {
+  flex-grow: 1; /* Make input take available space */
+  padding: 8px;
+  border-radius: 5px;
+  border: 1px solid #ccc; /* subtle border for the input */
+}
+
+.checkout-button {
+  background-color: #f88379; /* Soft red */
+  color: white;
+  border: none;
+  border-radius: 8px;
+  padding: 10px 20px;
+  text-align: center;
+  display: block;
+  width: 100%; /* Full width buttons */
+  font-weight: bold;
+  font-size: 24px;
+}
+
+.checkout-button {
+  margin-top: 20px; /* Space between coupon and checkout */
+}
+
+.checkout-button:hover,
+.checkout-button:focus,
+.checkout-button:active {
+  background-color: #c2574d !important;
+}
+
+.checkout-button:disabled {
+  background-color: #f88379;
+}
+
+.apply-button {
+  background-color: #f88379; /* Soft red */
+  color: white;
+  border: none;
+  border-radius: 8px;
+  padding: 10px 20px;
+  text-align: center;
+  display: block;
+  font-weight: bold;
+  font-size: 24px;
+}
+
+.apply-button:hover,
+.apply-button:focus,
+.apply-button:active {
+  background-color: #c2574d !important;
+}
+
+.continue-shopping {
+  display: inline-block;
+  position: relative;
+  color: #333333;
+  text-decoration: none;
+  padding: 10px;
+  margin-top: 20px; /* Space after checkout */
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.continue-shopping::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 6px;
+  bottom: -2px;
+  left: 0;
+  background-color: #4ecdc4;
+  visibility: visible;
+  transform: scaleX(1);
+  transition: all 0.2s ease-in-out;
+}
+
+.continue-shopping:hover::after,
+.continue-shopping:focus::after {
+  transform: scaleX(1.2);
+}
+
+/* DESKTOP */
+@media (min-width: 768px) {
+  .shopping-cart-container {
+    flex-direction: row;
+  }
+
+  .cart-items,
+  .order-summary {
+    width: 48%;
+    padding: 20px;
+    margin-bottom: 0;
+  }
+
+  .cart-header, .cart-row {
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr; /* Original 5-column layout */
+    gap: 10px;
+    font-size: 16px;
+  }
+
+  .quantityButton {
+    padding: 3px 9px;
+  }
+}
