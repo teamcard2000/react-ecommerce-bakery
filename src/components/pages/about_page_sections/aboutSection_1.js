@@ -26,7 +26,7 @@ function aboutSection_1() {
       </Col>
       <Col md={6} className="d-flex justify-content-center">
         <img
-          src={process.env.PUBLIC_URL + "assets/images/story-img.jpg"}
+          src={process.env.PUBLIC_URL + "/assets/images/story-img.jpg"}
           alt="Sailor with the Cake"
           loading="lazy"
           className="img-fluid sailor-img"

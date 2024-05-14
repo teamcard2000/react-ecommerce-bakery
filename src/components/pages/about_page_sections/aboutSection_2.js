@@ -23,7 +23,7 @@ function aboutSection_2() {
         >
           <img
             src={
-              process.env.PUBLIC_URL + "assets/images/bakingwithpurpose-img.jpg"
+              process.env.PUBLIC_URL + "/assets/images/bakingwithpurpose-img.jpg"
             }
             alt="Bakers prepping baked goods"
             loading="lazy"

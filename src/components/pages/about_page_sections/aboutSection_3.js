@@ -13,7 +13,7 @@ function aboutSection_3() {
           className="d-flex justify-content-center mb-5 order-2"
         >
           <img
-            src={process.env.PUBLIC_URL + "assets/images/ourmission-img.jpg"}
+            src={process.env.PUBLIC_URL + "/assets/images/ourmission-img.jpg"}
             alt="Our Mission"
             loading="lazy"
             className="img-fluid mission-img"
